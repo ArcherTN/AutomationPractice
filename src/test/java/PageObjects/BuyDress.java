@@ -42,7 +42,7 @@ public class BuyDress extends BasePage{
     }
     public void checkIfDressIsAvailable(){
         WebElement checkifEmpty = driver.findElement(SHOPPING_CART_EMPTY_NOTIFICATION);
-        //Checking if Cart is empty, if the test fails, the shopping cart doesn't save dresses.
+        //Checking if Cart is empty, if the test passess, the shopping cart doesn't save dresses.
         Assert.assertFalse(elementIsVisible(checkifEmpty));
     }
 
