@@ -4,6 +4,7 @@ package Tests;
 import PageObjects.HomePage;
 import PageObjects.Registration;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Keys;
@@ -40,5 +41,10 @@ public class RegistrationTest {
     @After
     public void individualTearDown(){
         driver.manage().deleteAllCookies();
+    }
+
+    @AfterClass
+    public static void quitDriver() {
+        driver.quit();
     }
 }
