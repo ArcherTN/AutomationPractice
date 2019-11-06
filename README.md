@@ -13,5 +13,6 @@ Then I went about designing the tests that I wanted to perform, I created the ou
 
 There were a few issues in the process, there were a few website bugs that prevented ordering the dresses by the price, and the shopping cart didn't manage to keep the dresses in them. This would normally be reported as a bug for fixing, however due to the context of the situation I wrote the code I would need for those actions and commented out the bits that caused bugs. 
 
+Test can be run with mvn clean test
 
 
