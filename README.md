@@ -3,6 +3,8 @@
 When planning and designing the tests, the first thing I had in mind was ensuring that I had all the appropriate tools. 
 My choice of tools is Java, Selenium, and jUnit, this set of tools provides me with everything I need for the job. 
 
+The versions that I used were: Maven Compiler version 3.51, Selenium version 3.141.59, jUnit version 4.12.
+
 The requirements were that registration, login, buying the most expensive dress and signing out and checking if the dress was still in the basket afterwards. 
 
 My approach to structuring the tests was to intially create a base page for code I would consistently reuse. 
