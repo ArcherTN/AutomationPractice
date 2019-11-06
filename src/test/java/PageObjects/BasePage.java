@@ -47,7 +47,7 @@ abstract class BasePage {
     void emailGenerated(By elementSelector){
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(elementSelector));
         Random randomgen = new Random();
-        int randomInt = randomgen.nextInt(100);
+        int randomInt = randomgen.nextInt(100000);
         element.sendKeys("Username"+ randomInt + "@email.com");
     }
 
