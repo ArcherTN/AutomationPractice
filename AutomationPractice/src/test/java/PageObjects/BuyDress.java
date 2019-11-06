@@ -23,16 +23,15 @@ public class BuyDress extends BasePage{
     public void clickDresses(){
         waitAndClick(NAVIGATE_DRESSES);
     }
+    //
     public void selectSortDropDown(){
         selectDropDrowns(SORT_DROP_DOWN, "Price: Highest first");
-        //Commented out step because website doesn't sort dresses, which stops everything else from working.
     }
     public void addToCart(){
         waitAndClick(ADD_TO_CART);
     }
     public void confirmAddedToCart(){
         WebElement successMessage = driver.findElement(IN_SHOPPING_CART_MESSAGE);
-        //If Test passes, the dress is in the shopping cart.
         Assert.assertTrue(elementIsVisible(successMessage));
     }
     public void logOut(){
